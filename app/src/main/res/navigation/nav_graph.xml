@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment3">
+    <fragment
+        android:id="@+id/dashboardFragment3"
+        android:name="com.emilabdurahmanli.einentodoapp.ui.fragment.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment3_to_allTaskFragment3"
+            app:destination="@id/allTaskFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/allTaskFragment3"
+        android:name="com.emilabdurahmanli.einentodoapp.ui.fragment.AllTaskFragment"
+        android:label="fragment_all_task"
+        tools:layout="@layout/fragment_all_task" />
+</navigation>
